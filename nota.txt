@@ -1,3 +1,0 @@
-1) requirements.txt ---> todo los requerimientos
-2) Procfile ---> gunicorn app:app
-3) runtime --> version del lenguaje
