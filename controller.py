@@ -1,9 +1,6 @@
 from flask import jsonify
 from bs4 import BeautifulSoup
 import requests
-import pandas as pd
-import numpy as np
-import json
 
 list_teams_name = list()
 list_teams_logo = list()
