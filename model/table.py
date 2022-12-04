@@ -66,7 +66,7 @@ class ScrapingTableInformation:
             n+=1
             list_teams.append(
                 {'id': n, 'name': i, 'PTJ': args[1][args[0].index(i)], 'PJ': args[2][p],
-                'PG': args[2][p+1], 'PE': args[2][p+2], 'PP': args[2][p+3], 'img-logo': args[3][n-1]})
+                'PG': args[2][p+1], 'PE': args[2][p+2], 'PP': args[2][p+3], 'img_logo': args[3][n-1]})
             p+=4
         
         return list_teams
