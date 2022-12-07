@@ -13,9 +13,9 @@ def api():
 
 
 @cross_origin
-@server.get('/show')
-def show_table():
-    return apis.show() 
+@server.get('/show/<password>')
+def show_table(password):
+    return apis.show(password) 
 
 if __name__ == '__main__':
     server.run(debug=True)
