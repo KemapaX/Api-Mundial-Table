@@ -12,4 +12,4 @@ def show(password):
 
         return jsonify({"records": data, 'result': len(data)})
     else:
-        return jsonify({'messege': 'Password incorrect'})
+        return jsonify({'messege': 'Not authorized'})

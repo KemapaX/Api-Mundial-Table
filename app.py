@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
 import controller as apis
 
@@ -13,9 +13,11 @@ def api():
 
 
 @cross_origin
-@server.get('/show/<password>')
-def show_table(password):
+@server.get('/show')
+def show_table():
+    password = request.args.get('pass')
     return apis.show(password) 
+
 
 if __name__ == '__main__':
     server.run(debug=True)
